@@ -1,0 +1,160 @@
+
+.header {
+  display: flex;
+  background: #105952;
+  color: #EBFFFD;
+  font-family: 'Black Han Sans', sans-serif;
+  align-items: center;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.header div {
+  width: 100%;
+  font-size: 3vw;
+}
+
+.header .logo {
+  flex: 1;
+  align-self: center;
+}
+
+.header .title {
+  flex: 9;
+}
+
+.main { 
+  display: flex;
+  background-image: url(../media/Home_Page_Image_One.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+  flex: 1;
+  color: #EBFFFD;
+  font-size: 1.25rem;
+  background: linear-gradient(#090F0B, rgb(235,255,253, 0.7));
+  padding: 20px;
+  text-align: center;
+}
+
+.navigation .currentPage {
+  background-color: #7F3D17;
+}
+
+.navigation p {
+  padding: 30px 0px;
+}
+
+.navigation a {
+  color: #EBFFFD;
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.navigation a:hover  {
+  background-color: #7F3D17;
+  padding: 20px;
+}
+
+.contactForm {
+  padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+}
+
+.contactForm p {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+.contactForm input {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(235,255,253);
+}
+
+.contactForm input[pattern]:invalid {
+  color: red;
+}
+
+.contactForm .error {
+  color: red;
+}
+
+.contactForm textarea {
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(235,255,253);
+}
+
+.checkbox {
+  position: absolute;
+  height: 25px;
+}
+
+.main div {
+  flex: 5;
+  padding: 10px;
+  font-size: 1.25rem;
+  background-color: rgb(235,255,253, 0.7);
+}
+
+.content {
+  display: flex;
+  padding: 10px;
+}
+
+.content section {
+  flex: 1;
+  padding: 10px;
+}
+
+.content section + section {
+  text-align: right;
+}
+
+.footer {
+  color: #EBFFFD;
+  background-color: #105952;
+  padding: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 70%;
+  text-align: center;
+}
+
+.footer div a {
+  text-decoration: none;
+  color: rgb(193, 198, 195);
+  font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 980px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  aside #debug {
+    display: none; 
+  }
+}
+
+#debug {
+  display: none;
+}
+
+.functions{
+  display: none;
+}
